@@ -1,0 +1,40 @@
+/* Charles Lowers
+COP1500
+Stylesheet. Uses classes and IDs.*/
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+h4{
+	color: red;
+	font-family:'Arial';
+}
+h2{
+	color:aqua;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color:green
+}
+
+#title{
+    font-family:'Times New Roman', Times, serif;
+    color:darkcyan
+}
+#list{
+	color:LawnGreen;
+	font-size: 20px;
+}
+.links{
+    color:cyan
+}
+#resumeparagraph{
+font-size: 15px;
+color: blue;
+}
