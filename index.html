@@ -17,9 +17,18 @@ Main page with brief summary-->
 Your browser does not support the HTML5 canvas tag.</canvas>
 
 <script>
+	function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.font = "30px Arial";
+ctx.color = getRandomColor();
 ctx.fillText("Check out the links below!",10,50);
 </script>
 	</p>
