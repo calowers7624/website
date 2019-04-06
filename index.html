@@ -20,13 +20,11 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 <script>
 function myCanvas() {
 
-  var x = document.createElement("IMG");
-  x.setAttribute("src", "./media/Scan.jpg");
-  x.setAttribute("alt", "Charles Lowers face");
+  function myCanvas() {
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
-  document.body.appendChild(x);
-	ctx.drawImage(img,10,10);
+  var img = document.getElementById("./media/Scan.jpg");
+  ctx.drawImage(img,10,10);
 
 }
 	</script>
