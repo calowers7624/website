@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <!-- Charles Lowers
 COP 1500
 Main page with brief summary-->
@@ -11,6 +11,7 @@ Main page with brief summary-->
 <body>
     <h1 id="title">My Portfolio</h1>
 		<h2>About Me</h2>
+	
 	<canvas id="myCanvas" width="250" height="300"
 style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -19,8 +20,6 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 
 <script>
 function myCanvas() {
-
-  function myCanvas() {
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
   var img = document.createElement("IMAGE");
@@ -28,7 +27,7 @@ function myCanvas() {
   IMAGE.setAttribute("width", "304");
   IMAGE.setAttribute("height", "228");
   IMAGE.setAttribute("alt", "The Pulpit Rock");
-	   document.body.appendChild(IMAGE);
+  document.body.appendChild(IMAGE);
   ctx.drawImage(IMAGE,10,10);
 
 }
