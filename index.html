@@ -19,13 +19,15 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 
 <script>
 function myCanvas() {
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  var img = document.CreateElement("./media/Scan.jpg");
-  ctx.drawImage(img,10,10);
+
+  var x = document.createElement("IMG");
+  x.setAttribute("src", "./media/Scan.jpg");
+  x.setAttribute("alt", "Charles Lowers face");
+  document.body.appendChild(x);
+
 }
 	</script>
-			<img src="./media/Scan.jpg" alt="Charles Lowers face" id="picture"> 
+			
 		<p id="aboutme">Hello! My name is Charles Lowers. Currently, I am in my second semester at the Florida Gulf Coast University. I am also CompTIA A+ and Network+ certified. In my spare time I like repairing and refurbishing computers and mechanical keyboards.</p>
 
         <p><a href="./resume.html" class="links">My resume</a></p>
