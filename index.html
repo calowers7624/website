@@ -20,15 +20,13 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 
 <script>
 function myCanvas() {
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  var img = document.createElement("IMAGE");
-  IMAGE.setAttribute("src", "./media/Scan.jpg");
-  IMAGE.setAttribute("width", "304");
-  IMAGE.setAttribute("height", "228");
-  IMAGE.setAttribute("alt", "The Pulpit Rock");
-  document.body.appendChild(IMAGE);
-  ctx.drawImage(IMAGE,10,10);
+  var x = document.createElement("IMG");
+  x.setAttribute("src", "./media/Scan.jpg");
+  x.setAttribute("width", "304");
+  x.setAttribute("height", "228");
+  x.setAttribute("alt", "The Pulpit Rock");
+  document.body.appendChild(x);
+
 
 }
 	</script>
