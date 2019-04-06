@@ -23,7 +23,10 @@ function myCanvas() {
   var x = document.createElement("IMG");
   x.setAttribute("src", "./media/Scan.jpg");
   x.setAttribute("alt", "Charles Lowers face");
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
   document.body.appendChild(x);
+	ctx.drawImage(img,10,10);
 
 }
 	</script>
