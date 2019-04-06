@@ -23,7 +23,11 @@ function myCanvas() {
   function myCanvas() {
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
-  var img = document.createElement("./media/Scan.jpg");
+  var img = document.createElement("IMAGE");
+  IMAGE.setAttribute("src", "img_pulpit.jpg");
+  IMAGE.setAttribute("width", "304");
+  IMAGE.setAttribute("height", "228");
+  IMAGE.setAttribute("alt", "The Pulpit Rock");
   ctx.drawImage(img,10,10);
 
 }
