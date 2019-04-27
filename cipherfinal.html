@@ -1,0 +1,78 @@
+<!doctype html>
+<!-- Charles Lowers
+COP 1500
+Main page with brief summary-->
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Charles Lowers Portfolio Assignment</title>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+    <h1 id="title">Caesar Cipher</h1>
+		<h2>Caesar Cipher Encryptor</h2>
+
+
+    <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+function myFunction() {
+
+//Used arrays instead of converting to ASCII
+
+	var cipherString = prompt("Please enter text to be encrypted", "Your text here");
+	var cipherShift = prompt("Please enter cipher shift", "1");
+	var shiftableLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+	var capitalString = cipherString.toUpperCase();
+	var shiftInt = parseInt(cipherShift);
+	var newString = '';
+//console.logs are for troubleshooting
+	console.log(cipherString);
+	console.log(capitalString);
+
+
+
+	for (var i = 0; i < capitalString.length; i++) {
+		var currentLetter = capitalString[i];
+		console.log(currentLetter);
+
+
+		
+		if(shiftableLetters.includes(currentLetter) === false) {
+		newString += currentLetter;
+		continue;
+
+
+		
+		}
+		
+		var currentIndex = shiftableLetters.indexOf(currentLetter);
+		var shiftInt = parseInt(cipherShift);
+		var newIndex =currentIndex + shiftInt;
+		
+		if(newIndex > 25) newIndex = newIndex - 26;
+		if(newIndex < 0) newIndex = newIndex + 26;
+		if(cipherString[i] === cipherString[i].toLowerCase()) {
+		  newString += shiftableLetters[newIndex].toLowerCase();
+		}
+		else newString += shiftableLetters[newIndex];
+
+
+}
+
+console.log(newString);
+
+document.getElementById("demo").innerHTML = "Encrypted text: " + newString;
+
+  
+}
+
+
+
+</script>
+
+</body>
+</html> 
