@@ -1,0 +1,52 @@
+<!doctype html>
+
+<!-- Charles Lowers
+COP 1500
+Resume page-->
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Resume</title>
+<!-- The stylesheet. -->
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+
+<!-- Title heading -->
+    <h1 id="title">Test Scores Calculator</h1>
+	<h2> Calculates the average of 3 test scores.</h2>
+<p>Average:</p>
+
+    <button type="button" onclick="myFunction()">Submit</button>
+
+<p id="out"></p>
+
+<script>
+    function myFunction() {
+    var i = 0;
+        var total = 0;
+        var testScoreNumber;
+        var testScoreString;
+        while (i<3) {
+              testScoreString = prompt("Please enter your test score:", "100");
+            total = total + parseInt(testScoreString);
+            i++;
+            
+
+    
+        }
+ 
+
+   
+  
+    
+    // Output
+    document.getElementById("out").innerHTML = (total/i);
+        
+}
+
+</script>
+
+<a href="index.html" class="links">Back to main page</a>
+</body>
+</html>
